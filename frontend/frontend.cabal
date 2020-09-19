@@ -31,7 +31,6 @@ executable frontend
                , obelisk-generated-static
                , frontend
   --TODO: Make these ghc-options optional
-  ghc-options: -threaded
   if impl(ghcjs)
     ghc-options: -dedupe
     cpp-options: -DGHCJS_BROWSER
